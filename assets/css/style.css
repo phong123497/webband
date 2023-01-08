@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#main {
+
+}
+
+#header {
+    height: 46px;
+    background-color: #333;
+    /* khi position == fixed no noi len o vi tri cao hon 
+    nhuong lai vi tri khac cho thang khac */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+#nav {
+    display: inline-block;
+}
+#nav , .subnav {
+    list-style: none;
+}
+#nav li {
+    position: relative;
+}
+#nav >li{
+    /* chuyen tu lieu mac dinh items > inline-block */
+    display: inline-block;
+}
+
+#nav li a {
+    line-height: 46px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 24px;
+    color: #fff;
+}
+#nav .subnav li:hover a,
+#nav >li:hover > a {
+    background-color: #ccc;
+    color: #333;
+    cursor: pointer;
+}
+#nav li:hover .subnav {
+    display: block;
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);;
+    
+    
+}
+#nav .subnav a {
+    display: block;
+    color: #333;
+    padding: 0 12px;
+    line-height: 38px;
+
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+#header .search-btn{
+    /* div co thuoc tinh block nhg van chi dinh dc dua vao float de di 
+    chuyen len 1 hang */
+    float: right;
+    /* display: inline-block; */
+    padding: 0 21px;
+
+
+}
+#header .search-btn:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color: #fff;
+    font-size: 20px;
+    /* chi dinh chieu cao de can giua  */
+    line-height: 46px;
+}
+
+#slider {
+    margin-top: 46px;
+   
+}
+
+#content {
+
+}
+
+#footer {
+
+}
