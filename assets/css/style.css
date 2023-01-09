@@ -6,6 +6,11 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
+/* khi dung float vao thanh phan con thi the cha k ôm hêt được thành phần
+con khi xu ly co thẻ dùng overfloat  hidden hoăc */
+.clear {
+    clear: both;
+}
 #main {
 
 }
@@ -113,7 +118,7 @@ html{
 }
 #slider .text-heading {
     font-size: 24px;
-    /* xet do day cua font dao dong tu 100-700 */
+    /* xet do day cua font dao dong tu 100-900 */
     font-weight: 500;
     
 }
@@ -125,7 +130,57 @@ html{
 
 
 #content {
+   
+}
+#content .content-section {
+    padding: 64px 0 64px 0 ;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center; 
+    /* day cac chu xa nhau ra  */
+    letter-spacing: 4px;
+}
 
+#content .section-sub-heading {
+    text-align: center;
+    font-style: italic;
+    margin-top:25px;
+    font-size: 15px;
+    /*có 2 cách lam chu mờ đi là đổi màu chư hoặc dung opacity */
+    opacity: 0.6;
+}
+#content .about-text {
+    margin-top: 25px;
+    font-size: 15px;
+    /* can deu hai ben cua text */
+    text-align: justify;
+    line-height: 1.6;
+}
+#content .member-list {
+    margin-top: 48px;
+
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    /* width: 33,33333; */
+}
+#content .member-name {
+    font-size: 15px;
+    text-align: center;
+
+}
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    /* k can dat chieu con lai vi no tu dong ti le voi kich thuoc */
+    /* height: 154px; */
+    border-radius: 4px;
 }
 
 #footer {
