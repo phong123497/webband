@@ -11,6 +11,9 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
 .clear {
     clear: both;
 }
+.text-white {
+    color: white !important;
+}
 #main {
 
 }
@@ -101,7 +104,7 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
 #slider {
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/assets/image/slider.jpg') top center / cover no-repeat;
+    background: url('/assets/image/slider.png') top center / cover no-repeat;
     position: relative;
    
 }
@@ -136,7 +139,7 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
     padding: 64px 0 64px 0 ;
     width: 800px;
     margin: 0 auto;
-    text-align: center;
+    /* text-align: center; */
 }
 #content .section-heading {
     font-size: 30px;
@@ -169,10 +172,10 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
     float: left;
     width: calc(100%/3);
     /* width: 33,33333; */
+    text-align: center;
 }
 #content .member-name {
     font-size: 15px;
-    text-align: center;
 
 }
 #content .member-img {
@@ -182,7 +185,124 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
     /* height: 154px; */
     border-radius: 4px;
 }
+/* tour section */
+.tour-section {
+    background-color: #000;
+
+}
+.ticket-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+.ticket-list li {
+    text-align: left;
+    font-size: 15px;
+    /* khi dat height no se k dc can giua  */
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    opacity: 0.7;
+}
+.ticket-list .sold-out {
+    margin-left: 10px;
+    background: red;
+    padding: 2px 4px;
+    font-size: 15px;
+    color: #fff;
+}
+
+.ticket-list .quantity{
+    float: right;
+    background: #d70707;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 50%;
+    /* no bi lech so voi the li nen chinh margrin top  */
+    margin-top: -2px;
+}
+/*place luu dien */
+.place-list {
+    /* dung ki thuat margin âm để điêù chinh lê 2 bên items 
+    vi nó có padding ;0 8px nên phải -8px*/
+    margin: 32px -8px 0 -8px;
+    padding-bottom: 48px;
+}
+
+.place-list .place-items {
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+    position: relative;
+}
+
+.place-list .place-img {
+    /* ảnh to hơn so với thẻ div nên  dể nó vừa thẻ thì dung with 100% */
+    width: 100%;
+    height: 171px;
+    /* loai bo thuoc tinh inline block -> block 
+    de cả giữa inline và block k có khoảng cáchcách*/
+    display: block;
+}
+/* tao hieu ung lop phu chay */
+.img-cover {
+    position:absolute;
+    top: -171px;
+    left: -248px;
+    width: 97%;
+    height: 171px;
+    background:rgb(255, 145, 0);
+    opacity: 0;
+    transition:  all cubic-bezier(0.4, 0, 1, 1) 0.9s;
+}
+.place-img:hover+ .img-cover {
+    opacity: 0.5;
+    top:0;
+    left: 0;
+}
+.place-img:hover{
+    opacity: 0.6;
+    top:0;
+}
+.place-list .place-body {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+
+}
+
+.place-list .place-heading {
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.place-list .place-time {
+    margin-top: 10px;
+}
+
+.place-list .place-desc {
+    margin: 10px 0;
+}
+
+.place-list .place-btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    /* nut là inline mà phia trên thẻ p  là block nên k chỉnh đc margin
+    top vi vay chuyen nó thành inline-block */
+    display: inline-block;
+    margin-top: 15px;
+}
+.place-btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
 
 #footer {
 
 }
+
+
+
+
