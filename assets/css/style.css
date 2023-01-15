@@ -11,8 +11,43 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
 .clear {
     clear: both;
 }
+/* common*/
 .text-white {
     color: white !important;
+}
+.row {
+   margin-left: -8px;
+   margin-right: -8px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-third {
+    width:33.33333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full {
+    width: 100%;
+}
+/* vi nó là class chung nên k nên ghi css đè lên class bên trong
+tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
+.text-center {
+    text-align: center !important;
+}
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16 {
+    margin-top: 16px;
 }
 #main {
 
@@ -168,12 +203,12 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
     margin-top: 48px;
 
 }
-#content .member-item{
+/* #content .member-item{
     float: left;
     width: calc(100%/3);
     /* width: 33,33333; */
-    text-align: center;
-}
+    /* text-align: center; */
+/* } */ 
 #content .member-name {
     font-size: 15px;
 
@@ -223,16 +258,11 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
 .place-list {
     /* dung ki thuat margin âm để điêù chinh lê 2 bên items 
     vi nó có padding ;0 8px nên phải -8px*/
-    margin: 32px -8px 0 -8px;
-    padding-bottom: 48px;
+    /* margin: 32px -8px 0 -8px; */
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
-.place-list .place-items {
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
-    position: relative;
-}
 
 .place-list .place-img {
     /* ảnh to hơn so với thẻ div nên  dể nó vừa thẻ thì dung with 100% */
@@ -297,7 +327,36 @@ con khi xu ly co thẻ dùng overfloat  hidden hoăc */
     background-color: #ccc;
     cursor: pointer;
 }
+/*  contact */
+.contact-content {
+    margin-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+/* class '*=' co nghia la tim class co chu ti- */
+.contact-info i[class*="ti-"] {
+    width:30px;
+    display: inline-block;
+    
+}
+.contact-form {
+    font-size: 15px;
 
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.contact-form .form-submit {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    float: right;
+    padding: 10px 16px;
+}
 
 #footer {
 

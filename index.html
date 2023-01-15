@@ -54,18 +54,18 @@
                     (Hypertext Markdown Language) bạn sẽ buộc phải sử dụng thuộc tính position trong CSS. Ví dụ như làm thanh tính năng trên menu, header, v.v.
                      Có thể hiểu nó là thuộc tính xác định loại của phương pháp định vị trí cho thành phần.
                 </p>
-                <div class="member-list">
-                    <div class="member-item">
+                <div class="row member-list">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
 
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
 
-                    <div class="member-item">
+                    <div class="col col-third text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
@@ -86,8 +86,8 @@
                         <li>Thang 3 <span class="quantity"> 3</span></li>
                     </ul>
                     <!-- dia diem lua dien -->
-                    <div class="place-list">
-                        <div class="place-items"> 
+                    <div class=" row place-list">
+                        <div class="col col-third"> 
                             <img src="assets/image/hanoi.jpg" alt="hanoi" class="place-img">
                             <div class="img-cover"></div>
                             
@@ -99,7 +99,7 @@
                             </div>
                         </div>
 
-                        <div class="place-items">
+                        <div class="col col-third">
                             <img src="assets/image/da-nang.jpg" alt="da-nang" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Da Nang</h3>
@@ -110,7 +110,7 @@
                         </div>
                    
 
-                        <div class="place-items">
+                        <div class="col col-third">
                             <img src="assets/image/hochiminh.jpg" alt="hochiminh" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Ho Chi Minh</h3>
@@ -130,6 +130,35 @@
              <div class="content-section">
                 <h2 class="section-heading">THE CONTACT</h2>
                 <p class="section-sub-heading">we love music</p>
+
+                <div class="row contact-content">
+                    <div class="col col-half contact-info">
+                        <p><i class="ti-location-pin"></i>Ha noi</p>
+                        <p><i class="ti-mobile"></i>Phone:123456789</p>
+                        <p><i class="ti-email"></i>Email:phong@gmail.com</p>
+                    </div>
+
+                    <div class="col col-half contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half">
+                                    <input type="text" name="" id="" required  class="form-control" placeholder="name">
+                                </div>
+
+                                <div class="col col-half">
+                                    <input type="text" name="" id=""  required class="form-control" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-full">
+                                    <input type="text" name="" id=""  required class="form-control" placeholder="Message">
+
+                                </div>
+                            </div>
+                            <input class="form-submit mt-16" type ="submit" value="SEND" >
+                        </form>
+                    </div>
+                </div>
                 
             </div>
         </div>
@@ -197,6 +226,6 @@
             event.stopPropagation()
         })
     </script>
-    a
+    
 </body>
 </html>
