@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fplay-lh.googleusercontent.com%2Fgk-WYYED1OJNr0G28ucBPUTPric5QCLwW2q_rNcYg-XTQCbPkhcp3CqVJ-1dHiBql10%3Ds256-rw&imgrefurl=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%3Fhl%3Dvi%26gl%3DUS&tbnid=HGvR1RhakEZEoM&vet=12ahUKEwiClbP4k8n8AhWw-GEKHWMlBtYQMygEegQIARBJ..i&docid=2eRDLG64KMrduM&w=256&h=256&itg=1&q=%E1%BA%A3nh%20youtube&hl=vi&ved=2ahUKEwiClbP4k8n8AhWw-GEKHWMlBtYQMygEegQIARBJ">
     <link  rel="stylesheet" href="assets/css/style.css">
+    <link  rel="stylesheet" href="assets/css/responsive.css">
     <link  rel="stylesheet" href="assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
-    
-    <title>Document</title>
 </head>
 <body>
     <div id="main">
@@ -15,26 +16,30 @@
             <!-- start nav -->
             <ul id="nav">
                 <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li >
-                    <a href="">More
+                    <a href="#">More
                         <i class="nav-arrow-down ti-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
             <!-- end nav -->
             <!-- search button -->
-           <div class="search-btn">
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            
+            <div class="search-btn">
                 <i class="search-icon ti-search"></i>
-           </div>
-
+            </div>
+            
         </div>
         <div id="slider">
             <div class="text-content">
@@ -46,7 +51,7 @@
 
         <div id="content">
             <!-- about -->
-            <div class="content-section">
+            <div id ="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">we love music</p>
                 <p class="about-text">
@@ -55,17 +60,17 @@
                      Có thể hiểu nó là thuộc tính xác định loại của phương pháp định vị trí cho thành phần.
                 </p>
                 <div class="row member-list">
-                    <div class="col col-third text-center">
+                    <div class=" col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
 
-                    <div class="col col-third text-center">
+                    <div class=" col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
 
-                    <div class="col col-third text-center">
+                    <div class=" col col-third s-col-full mt-32 text-center">
                         <p class="member-name">Name</p>
                         <img src="assets/image/son tung.jpg" alt="member1" class="member-img">
                     </div>
@@ -75,7 +80,7 @@
             </div>
             
              <!-- tour section -->
-            <div class="tour-section">
+            <div id ="tour" class="tour-section">
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
                     <p class="section-sub-heading text-white"> Xin hãy đặt vé tại đây </p>
@@ -87,7 +92,7 @@
                     </ul>
                     <!-- dia diem lua dien -->
                     <div class=" row place-list">
-                        <div class="col col-third"> 
+                        <div class="col col-third s-col-full mt-16"> 
                             <img src="assets/image/hanoi.jpg" alt="hanoi" class="place-img">
                             <div class="img-cover"></div>
                             
@@ -95,28 +100,28 @@
                                 <h3 class="place-heading">Ha Noi</h3>
                                 <p class="place-time"> nam 2023 thang 1 ngay 5</p>
                                 <p class="place-desc">cong dien tai ha noi ngay 2023 thang 1 ngay 5</p>
-                                <button  class="place-btn  js-buy-ticket">Buy Tickets</button>
+                                <button  class="btn  js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="assets/image/da-nang.jpg" alt="da-nang" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Da Nang</h3>
                                 <p class="place-time"> nam 2023 thang 1 ngay 5</p>
                                 <p class="place-desc">cong dien tai Da Nang ngay 2023 thang 1 ngay 5</p>
-                                <button  class="place-btn js-buy-ticket">Buy Tickets</button>
+                                <button  class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                    
 
-                        <div class="col col-third">
+                        <div class="col col-third s-col-full mt-16">
                             <img src="assets/image/hochiminh.jpg" alt="hochiminh" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Ho Chi Minh</h3>
                                 <p class="place-time"> nam 2023 thang 1 ngay 5</p>
                                 <p class="place-desc">cong dien tai Ho Chi Minh ngay 2023 thang 1 ngay 5</p>
-                                <button  class="place-btn js-buy-ticket">Buy Tickets</button>
+                                <button  class="btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="clear"></div>
@@ -126,26 +131,26 @@
             </div>
             
 
-             <!-- contact section -->
-             <div class="content-section">
+             <!-- begin contact section -->
+            <div id ="contact" class="content-section">
                 <h2 class="section-heading">THE CONTACT</h2>
                 <p class="section-sub-heading">we love music</p>
 
                 <div class="row contact-content">
-                    <div class="col col-half contact-info">
+                    <div class="col col-half s-col-full contact-info">
                         <p><i class="ti-location-pin"></i>Ha noi</p>
                         <p><i class="ti-mobile"></i>Phone:123456789</p>
                         <p><i class="ti-email"></i>Email:phong@gmail.com</p>
                     </div>
 
-                    <div class="col col-half contact-form">
+                    <div class="col col-half s-col-full contact-form">
                         <form action="">
                             <div class="row">
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" id="" required  class="form-control" placeholder="name">
                                 </div>
 
-                                <div class="col col-half">
+                                <div class="col col-half s-col-full">
                                     <input type="text" name="" id=""  required class="form-control" placeholder="email">
                                 </div>
                             </div>
@@ -155,16 +160,26 @@
 
                                 </div>
                             </div>
-                            <input class="form-submit mt-16" type ="submit" value="SEND" >
+                            <input class="btn pull-right mt-16" type ="submit" value="SEND" >
                         </form>
                     </div>
                 </div>
-                
+            </div>
+             <!-- end contact section -->
+            <div class="map-seletion">
+                <img src="assets/image/nhahat.webp" alt="nha hat">
             </div>
         </div>
 
         <div id="footer">
-
+            <div class="socials-list">
+                <a href=""><i class="ti-facebook"></i></a>
+                <a href=""><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-twitter"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+            </div>
+            <p  class="copyright">CopyRight 2023<a href="youtube.com">youtube</a></p>
         </div>
         
         <div class="modal open js-modal">
@@ -201,6 +216,40 @@
 
     </div>
     <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headerHeight = header.clientHeight;
+        mobileMenu.onclick= function () {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height ='auto';
+            }else {
+                // header.style.height ='46px'
+                header.style.height= null;
+            }
+        }
+        var menuItems= document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0 ; i <menuItems.length; i++) {
+            var menuItem = menuItems[i]
+
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+                
+                if (!isParentMenu){
+                    header.style.height= null;
+
+                }else {
+                   event.preventDefault();
+                }
+               
+            }
+        }
+
+        
+    </script>
+
+    <script>
         const buyBtns= document.querySelectorAll('.js-buy-ticket')
         const modal= document.querySelector('.js-modal')
         const modalClose= document.querySelector('.js-modal-close')
@@ -214,7 +263,7 @@
         function closeBuyTickets () {
            modal.classList.remove('open')
         }
-
+        
         for(const buyBtn of buyBtns) {
             buyBtn.addEventListener('click',showBuyTickets)
         }

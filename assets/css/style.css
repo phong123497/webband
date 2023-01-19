@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 html{
+    scroll-behavior:smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* khi dung float vao thanh phan con thi the cha k ôm hêt được thành phần
@@ -48,6 +49,28 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
 }
 .mt-16 {
     margin-top: 16px;
+}
+.mt-32 {
+    margin-top: 32px;
+}
+.pull-right {
+    float: right;
+}
+.btn {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    /* nut là inline mà phia trên thẻ p  là block nên k chỉnh đc margin
+    top vi vay chuyen nó thành inline-block */
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+.btn:hover {
+    background-color: #ccc;
+    cursor: pointer;
 }
 #main {
 
@@ -115,6 +138,13 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
 #nav .nav-arrow-down{
     font-size: 14px;
 }
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-btn,
 #header .search-btn{
     /* div co thuoc tinh block nhg van chi dinh dc dua vao float de di 
     chuyen len 1 hang */
@@ -124,12 +154,19 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
 
 
 }
+#header .mobile-menu-btn:hover{
+    background-color:#ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
 #header .search-btn:hover{
     background-color: red;
     cursor: pointer;
 }
-
-#header .search-icon{
+#header .menu-icon,
+#header .search-icon {
     color: #fff;
     font-size: 20px;
     /* chi dinh chieu cao de can giua  */
@@ -171,10 +208,13 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
    
 }
 #content .content-section {
-    padding: 64px 0 64px 0 ;
+    padding: 64px 0 112px;
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    /* text-align: center; */
+    padding-left: 16px;
+    padding-right: 16px;
+    
 }
 #content .section-heading {
     font-size: 30px;
@@ -200,7 +240,7 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
     line-height: 1.6;
 }
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
 
 }
 /* #content .member-item{
@@ -259,8 +299,7 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
     /* dung ki thuat margin âm để điêù chinh lê 2 bên items 
     vi nó có padding ;0 8px nên phải -8px*/
     /* margin: 32px -8px 0 -8px; */
-    margin-top: 32px;
-    margin-bottom: 48px;
+    margin-top: 16px;
 }
 
 
@@ -312,21 +351,7 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
     margin: 10px 0;
 }
 
-.place-list .place-btn {
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    /* nut là inline mà phia trên thẻ p  là block nên k chỉnh đc margin
-    top vi vay chuyen nó thành inline-block */
-    display: inline-block;
-    margin-top: 15px;
-}
-.place-btn:hover {
-    background-color: #ccc;
-    cursor: pointer;
-}
+
 /*  contact */
 .contact-content {
     margin-top: 48px;
@@ -350,15 +375,36 @@ tao 1 thẻ div ghi đè  xong padding cho  thẻ div đó  */
     border: 1px solid #ccc;
     width: 100%;
 }
-.contact-form .form-submit {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    float: right;
-    padding: 10px 16px;
-}
 
+/* map img  */
+.map-seletion img {
+    width: 100%;
+    height:700px;
+}
 #footer {
+    padding: 64px;
+    text-align: center;
+    background-color: #ccc;
+}
+#footer .socials-list {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+#footer .socials-list a {
+    color: rgba(0,0,0, 0.6);
+    text-decoration: none;
+}
+.copyright a:hover,
+#footer .socials-list a:hover {
+    color: rgba(0,0,0, 0.3);
+
+}
+.copyright {
+    color: rgba(0,0,0, 0.6);
+    font-size: 20px;
+}
+.copyright a {
+    color: rgba(0,0,0, 0.6);
 
 }
 
